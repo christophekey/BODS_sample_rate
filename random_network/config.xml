@@ -1,0 +1,33 @@
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netgenerateConfiguration.xsd">
+
+    <processing>
+        <lefthand value="1"/>
+    </processing>
+    
+    <grid_network>
+        <grid value="true"/>
+        <grid.x-number value="5"/>
+        <grid.y-number value="5"/>
+        <grid.length value="300"/>
+    </grid_network>
+
+    <output>
+        <write-license value="true"/>
+        <output-file value="net.net.xml"/>
+    </output>
+
+    <building_defaults>
+        <default-junction-type value="traffic_light"/>
+        <default.lanenumber value="2"/>
+    </building_defaults>
+
+    <tls>
+        <tls.default-type value="actuated"/>
+    </tls>
+
+    <report>
+        <verbose value="true"/>
+        <xml-validation value="never"/>
+    </report>
+
+</configuration>
